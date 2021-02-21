@@ -2,7 +2,12 @@
 1. Create a function named `sayHello` that alerts a message `Hello World!`.
 */
 
+function sayHello() {
+alert('hello world')
+}
+
 /*
+
 2. Create a function named `fullName` with the following steps:
 
   - Prompts a message saying `Enter your first name` and store the value into variable named `firstName`
@@ -10,6 +15,19 @@
   - Concat the value of fistName and lastName and store it in another variable named `fullName`.
   - Alert `fullName`
 */
+
+function fullname (){
+let firstname=prompt('enter your fisrt name')
+let lastname=prompt('enter your last name')
+
+let fullname=firstname+lastname
+
+alert(fullname)
+
+
+}
+
+
 
 /*
 3. Create a function named `addTwoNumbers` with the following steps:
@@ -20,6 +38,20 @@
   - Alert `sum`
 */
 
+function  addTwoNumbers(){
+  let firstnum=prompt('first num')
+  let secondnum=prompt('second num')
+
+  firstnum=parseInt(firstnum)
+  secondnum=prompt(secondnum)
+
+  
+  let sum=firstnum+lastnum
+  
+  alert(sum)
+  
+  
+  }
 /*
 4. Create a function named `getTable` with the following steps:
 
@@ -39,12 +71,40 @@
   9 * 10 = 90
 */
 
+
+function  getTable(){
+  let num=prompt('Enter a number')
+  
+    num=parseInt(num)
+
+    for (i = 1; i <= 10; i++) {
+     console.log(i*num)
+    }
+    
+  
+ 
+  
+  
+  }
 /*
 5. Create a function named `isLeapYear` with the following steps:
 
   - Prompts a message saying `Enter a year` and store the value into variable named`year`
   - Alert `[year] is a leap year` otherwise `[year] is not a leap year`
 */
+
+function  isLeapYear(){
+  let year=prompt('Enter a year')
+  
+    year=parseInt(year)
+if (year%4==0) {
+  console.log('this is a leap year')
+  
+} else {
+  console.log('this is not a leap year')
+  
+}
+    
 
 /*
 6. Create a function named `getFactorial` with the following steps:
@@ -53,3 +113,16 @@
   - Alert `The factorial of [number] is [factorial]`
 
 */
+
+function  getFactorial(){
+  let number=prompt('Enter a number')
+  
+    number=parseInt(number)
+    
+
+    alert('the factorial of number')
+
+    for (i = 1; i <= number; i++) {
+      console.log(i*number)
+     }
+     
