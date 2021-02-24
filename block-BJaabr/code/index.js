@@ -29,7 +29,6 @@ convertToString(21);
 
 // - Execute the function and store the return value in a variable.
 let returnValue = convertToString(23);
-
 // - What is the typeof returnValue
 // typeof returnValue is "string"
 
@@ -40,19 +39,54 @@ Write a function named `addOne` that accepts a number, adds one to the given val
 Do the following with above problem.
 */
 
+
+
+
 // - Write a Function Declaration
+function addOne(x){
+  return x+1
+  
+  }
 
 // - Write a Function Expression
 
+let addOne = function (x) {
+  x=parseInt(x)
+  return x+1
+
+  
+  }
+  
+
 // - Write an Arrow Function without curly brackets(if possible)
+let convertToString = (n) => String(n);
+
+let addOne=(x) => x+1
+
 
 // - Write an Arrow Function with curly brackets
 
+let convertToString = (n) => {
+  return String(n);
+};
+
+let addOne=(x) =>{ 
+return x+1
+};
+
+
+
 // - Execute the function
 
+addOne (23)
+
+
 // - Execute the function and store the return value in a variable.
+addOne (23)
+let x=addOne(7)
 
 // - What is the typeof returnValue
+'number'
 
 /* 2. Subtract one
 
@@ -125,18 +159,75 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+function addOne(x){
+  return x+1
+  
+  }
+if (x>y) { 
+  return true
+  
+} else {
+  return false
+}
+  
+
+
 
 // - Write a Function Expression
 
+let isGreater = function (x,y) {  
+        
+  if (x>y) { 
+    return true
+    
+  } else {
+    return false
+  }
+
+  
+  }
+
+
+  
+
 // - Write an Arrow Function without curly brackets(if possible)
 
+
+let isGreater = (x,y) =>  x>y ? true: false
+        
+ 
+  
+  
 // - Write an Arrow Function with curly brackets
 
+
+  
+let isGreater = (x,y) =>{  
+        
+  if (x>y) { 
+    return true
+    
+  } else {
+    return false
+  }
+
+  
+  }
+
 // - Execute the function
+isGreater(2,3)
 
 // - Execute the function and store the return value in a variable
-
+let z=isGreater(2,3)
 // - What is the typeof returnValue
+'number'
+
+
+
+
+
+
+
 
 /* 6.
 
