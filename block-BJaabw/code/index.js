@@ -11,8 +11,9 @@ minToSec(2) ➞ 120
 */
 
 // - Write a Function Decleration for above problem
-function minToSec() {
-  // Your code
+function minToSec(min) {
+  let sec=min*60
+  return sec
 }
 // - Execute the function with required parameter
 
@@ -26,8 +27,13 @@ isInRange(1, 10, 19); // false
 */
 
 // - Write a Function Decleration for above problem
-function isInRange() {
-  // Your code
+function isInRange(lower,upper,n) {
+  if (n>=lower && n<=upper) {
+    return true
+  } else {
+    return false
+  }
+
 }
 // - Execute the function with required parameter
 
@@ -49,8 +55,23 @@ Obese: BMI is 30 or more
 
 */
 
-function calculateBMI() {
-  // Your code
+function calculateBMI(w,h) {
+  let bmi= w / (w*h)
+  if (bmi<18.5) {
+    return 'underweight'
+  } else if (bmi >18.5 && 24.9){
+    return 'Normalweight'
+  }
+  else if (bmi >25 && 29.9){
+    return 'Overweight'
+
+
+  }
+
+  else {
+    return 'obese'
+  }
+
 }
 
 /* 3. appropiateDrinks
@@ -79,8 +100,16 @@ Twist is when user passes anything other than number, or string value you should
 
 */
 
-function sum() {
+function sum(x,y) {
   // Your code
+  let z=typeof x
+  let w=typeof y
+  let result
+  if (z=='string'|| w== 'string') {
+    result=x+y
+  } else {
+    result=x+y
+  }
 }
 
 // Function Test
