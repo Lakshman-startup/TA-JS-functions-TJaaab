@@ -8,19 +8,24 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge() {
-  // Your code goes here
+function calculateDogAge(age,rate) {
+  let Dogage=rate*age
+    
+return Dogage
 }
 
 /*
+
+
 2. 🎖Write a function named calculateMoviesToWatch that:
   * [ ] takes 2 arguments: age, number of movies you watch every week. (take 4 weeks per month)
   * [ ] calculates the number of movies for rest of the life (based on a constant max age).
   * [ ] Return the total number of movie you will watch.
 */
 
-function calculateMoviesToWatch() {
-  // Your code goes here
+function calculateMoviesToWatch(age,movies) {
+  let noofmovies=age*movies
+  return noofmovies
 }
 
 /*
@@ -39,8 +44,10 @@ function celsiusToFahrenheit() {
   * [ ] Convert it to celsius and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
+function celsiusToFahrenheit(f) {
   // Your code goes here
+  let c=(f-32)/1.8
+  return c
 }
 
 /*
@@ -66,8 +73,40 @@ pow(-31, 2); // "The number below 1 is not allowed"
 and return sum or product of 1,…,n. If user enters any other value than `sum` or `product` alert `Not a valid Input`.
 */
 
-function sumOrProductOfN() {
-  // Your code goes here
+function sumOrProductOfN(n,operation) {
+  if (typeof n ==='number'){
+   
+   let result= 0
+    for(let i=0 ;i<n ;i++){
+      if (operation==='sum') {
+        result=result+i
+        
+      } 
+      else if(opertion=='product'){
+result=result*i
+      }   
+    
+           
+      else {
+
+        alert('invalid opeartion')
+        
+      }
+
+      
+
+    }
+    return result
+    
+
+
+  }
+  else{
+alert('Not a valid input')
+
+  }
+  return result
+
 }
 
 sumOrProductOfN(4, 'sum'); // 10
@@ -78,24 +117,50 @@ sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
 6. 🎖Write a program that accepts a number n using argument and return the sum of the numbers 1 to n
 */
 
-function sumOfN() {
+function sumOfN(n) {
   // Your code goes here
+  let result=0
+  for (let i=0 ;i>n; i++){
+result=result+1
+
+  }
+  resturn result
 }
 
 /*
 7. 🎖Modify the previous program such that only multiples of 5 or 7 are considered in the sum, e.g. n = 20 (5,7,10,14,15,20) 71
 */
 
-// Your code goes here
+function (n) {
+  // Your code goes here
+  let result=0
+  for (let i=0 ;i>n; i++){
+
+    if (n%5===0 ||n%7===0)    {
+      result=result+i
+
+
+    }
+
+
+  }
+  return result
+}
 
 /*
 8. 🎖Write a function `min` that takes two arguments and returns their minimum.
 */
 
-function min() {
+function min(x,y) {
   // Your code goes here
-}
+  if (x<y) {
+    return x
+  } else {
+    return y
+  }
 
+
+}
 min(0, 10);
 min(0, -10);
 
@@ -103,6 +168,7 @@ min(0, -10);
 9. 🎖Write a JavaScript function which accepts an argument and returns the type of the value.
 */
 
-function typeCheck() {
+function typeCheck(x) {
   // Your code goes here
+  return  typeof x
 }
